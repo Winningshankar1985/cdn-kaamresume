@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+<link rel="stylesheet" href="https://cdn.kaamresume.net/css/styles.min.css" />
+
+</head>
+
+<body>
+<!-- KAAMRESUME Body content starts -->
+<div id="upload-container" class="upload-container">
+    <div id="seo"><a href="https://kaamresume.net/tools-resumeatschecker">Want this tool for your Institution or
+            Website.</a></div>
+    <h2 class="score">Analyse Your Resume</h2>
+    <div class="upload-area" id="uploadfile">
+        <input type="file" id="fileElem" accept="application/pdf" onchange="handleFiles(this.files)">
+        <label class="button" for="fileElem">Select a PDF File</label>
+        <p><small>(Should be less than 20MB in PDF format)</small></p>
+        <a class="card-container justify-content-center" href="https://www.kaamresume.net">
+            <h5>Powered by KAAMRESUME</h5>
+        </a>
+    </div>
+</div>
+<div id="loader" class="loader card-container justify-content-center" style="display: none;"></div>
+<span class="text-center"> </span><br>
+<div id="results">
+</div>
+<!-- KAAMRESUME Body content ends -->
+
+    <script src="https://cdn.kaamresume.net/js/cdn-resumeanalyser.js"></script>
+</body>
+
+</html>
